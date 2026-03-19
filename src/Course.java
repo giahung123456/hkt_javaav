@@ -72,38 +72,38 @@ public class Course {
 
         System.out.print("Enter course ID: ");
        String courseID = scanner.nextLine();
-//        boolean checkInput = courseID.matches("[CO]+d{3}");
-//        if (!checkInput) {
-//            System.out.println("Invalid course ID");
-//            return null;
-//        }
+        boolean checkInput = courseID.matches("[CO]+d{3}");
+        if (!checkInput) {
+            System.out.println("Invalid course ID");
+            return null;
+        }
         System.out.print("Enter course name: ");
        String courseName = scanner.nextLine();
-//      if(courseName.length()<5||courseName==null){
-//          System.out.println("Invalid course name");
-//          return null;
-//      }
+      if(courseName.length()<5||courseName==null){
+          System.out.println("Invalid course name");
+          return null;
+      }
         System.out.print("Enter credit: ");
        int credit = scanner.nextInt();
         scanner.nextLine();
-//        if(credit<1||credit>100){
-//            System.out.println("Invalid credit");
-//            return null;
-//        }
+        if(credit<1||credit>100){
+            System.out.println("Invalid credit");
+            return null;
+        }
         System.out.print("Enter tuition fee: ");
        double tuitionFee = scanner.nextDouble();
         scanner.nextLine();
-//        if(tuitionFee<0){
-//            System.out.println("Invalid tuition fee");
-//            return null;
-//        }
+        if(tuitionFee<0){
+            System.out.println("Invalid tuition fee");
+            return null;
+        }
         System.out.print("Enter intructor: ");
        String intructor = scanner.nextLine();
 
-//        if(intructor==null){
-//            System.out.println("Invalid intructor");
-//            return null;
-//        }
+        if(intructor==null){
+            System.out.println("Invalid intructor");
+            return null;
+        }
         System.out.print("Enter status: ");
        boolean status = scanner.nextBoolean();
         if(status==true){

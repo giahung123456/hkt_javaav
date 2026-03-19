@@ -96,5 +96,8 @@ public class CourseBusiness {
             }
         }
    }
+   public void sortByFeeDesc() {
+        courses.sort(Comparator.comparingInt(Course::getCredit).reversed());
+   }
 
 }

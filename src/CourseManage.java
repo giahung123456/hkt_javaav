@@ -42,6 +42,7 @@ public class CourseManage {
                     courseManage.filterByActiveCourse();
                     break;
                 case 7:
+                    courseManage.sortByFeeDesc();
                     break;
                 case 8:
                     System.out.println("Goodbye!");
