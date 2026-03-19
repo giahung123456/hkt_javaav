@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Scanner;
+import java.util.*;
 
 public class CourseBusiness {
     private static CourseBusiness instance;
@@ -74,9 +71,11 @@ public class CourseBusiness {
 
     }
     void  deleteCourse(String id) {
-        for (Course course : courses) {
+        Iterator<Course> iterator = courses.iterator();
+        while (iterator.hasNext()) {
+            Course course = iterator.next();
             if (Objects.equals(id, course.getCourseID())) {
-                courses.remove(course);
+                iterator.remove();
             }
         }
     }
